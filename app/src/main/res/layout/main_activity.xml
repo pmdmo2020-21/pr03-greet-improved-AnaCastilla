@@ -5,6 +5,144 @@
     android:layout_height="match_parent"
     android:orientation="vertical">
 
-    <!-- TODO -->
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@id/swtPremium"
+        android:text="@string/strPremium"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="false"
+        android:layout_marginTop="@dimen/marginPremium"
+        android:layout_marginRight="@dimen/marginPremium"
+        android:layout_gravity="right"/>
+
+    <TextView
+        android:id="@id/lblName"
+        android:text="@string/txtName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginLeft" />
+
+    <EditText
+        android:id="@id/edtName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:layout_marginRight="@dimen/marginRight"
+        android:inputType="textCapSentences"
+        android:imeOptions="actionNext"
+        android:nextFocusDown="@id/edtSurname">
+        <requestFocus/>
+    </EditText>
+
+    <TextView
+        android:id="@id/lblCharsName"
+        android:text="@string/txtChars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/marginRight"
+        android:layout_gravity="right"/>
+
+    <TextView
+        android:id="@id/lblSurname"
+        android:text="@string/txtSurname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginTop"
+        android:layout_marginLeft="@dimen/marginLeft" />
+
+    <EditText
+        android:id="@id/edtSurname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:layout_marginRight="@dimen/marginRight"
+        android:imeOptions="actionDone"
+        android:inputType="textCapSentences"/>
+
+    <TextView
+        android:id="@id/lblCharsSurname"
+        android:text="@string/txtChars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/marginRight"
+        android:layout_gravity="right"/>
+
+    <TextView
+        android:id="@id/lblTreat"
+        android:text="@string/txtTreat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginTop"
+        android:layout_marginLeft="@dimen/marginLeft" />
+
+    <RadioGroup
+        android:id="@id/rdgGender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginTop"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@id/imgGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_mr"
+            android:layout_marginLeft="@dimen/marginLeft"
+            android:scaleType="centerCrop" />
+
+        <RadioButton
+            android:id="@id/rdbMr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="@string/mr" />
+        <RadioButton
+            android:id="@id/rdbMrs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mrs" />
+        <RadioButton
+            android:id="@id/rdbMs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ms" />
+    </RadioGroup>
+
+    <CheckBox
+        android:id="@id/chkPolitely"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txtPolitely"
+        android:layout_marginTop="@dimen/marginTop"
+        android:layout_marginLeft="@dimen/marginLeft"/>
+
+    <Button
+        android:id="@id/btnGreet"
+        android:text="@string/txtGreet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/marginTop"
+        android:layout_gravity="center" />
+
+    <ProgressBar
+        android:id="@id/prBar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/marginLeft"
+        android:layout_marginRight="@dimen/marginRight"
+        android:max="9"
+        android:layout_marginTop="@dimen/marginTop"/>
+
+    <TextView
+        android:id="@id/lblPrBar"
+        android:text="@string/txtPrBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/marginRight"
+        android:layout_gravity="right"/>
+
+
+
 
 </LinearLayout>
