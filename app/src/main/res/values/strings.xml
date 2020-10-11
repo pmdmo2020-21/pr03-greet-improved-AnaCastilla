@@ -12,8 +12,8 @@
     <string name="txtPrBar">0 of 10</string>
     <string name="txtGreetResult" />
     <string name="txtChars">20 chars</string>
-    <string name="txt_politely_checked">Good morning %1$s %2$s. Pleased to meet you</string>
-    <string name="txt_politely_notChecked">Hello %1$s %2$s. What\'s up?</string>
+    <string name="txt_politely_checked">Good morning %1$s %2$s %3$s. Pleased to meet you</string>
+    <string name="txt_politely_notChecked">Hello %1$s %2$s %3$s. What\'s up?</string>
     <string name="txt_buyPremium">Buy premium suscription to go on greeting!!</string>
     <string name="main_required">Required</string>
 </resources>

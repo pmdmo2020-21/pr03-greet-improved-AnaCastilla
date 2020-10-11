@@ -1,5 +1,6 @@
 package es.iessaladillo.pedrojoya.pr02_greetimproved;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.TextUtils;
@@ -139,14 +140,15 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    @SuppressLint("StringFormatMatches")
     private void clickGreet(String name, String surname) {
         if (binding.chkPolitely.isChecked()) {
             Toast.makeText(this,
-                    getString(R.string.txt_politely_checked, name, surname),
+                    getString(R.string.txt_politely_checked, gender, name, surname),
                     Toast.LENGTH_SHORT).show();
         } else {
             Toast.makeText(this,
-                    getString(R.string.txt_politely_notChecked, name, surname),
+                    getString(R.string.txt_politely_notChecked, gender, name, surname),
                     Toast.LENGTH_SHORT).show();
         }
         binding.prBar.setProgress(i++);
@@ -177,7 +179,7 @@ public class MainActivity extends AppCompatActivity {
         btnGreetOnClick();
     }
 
-    private boolean lblSurnameOnEditorAction() {
+    private boolean edtSurnameOnEditorAction() {
         btnGreetOnClick();
         return true;
     }
@@ -194,8 +196,8 @@ public class MainActivity extends AppCompatActivity {
         binding.rdbMrs.setOnCheckedChangeListener((x, y) -> clickGender());
         binding.rdbMs.setOnCheckedChangeListener((x, y) -> clickGender());
 
-        binding.lblSurname.setOnEditorActionListener((v, actionId, event) ->
-                lblSurnameOnEditorAction());
+        binding.edtSurname.setOnEditorActionListener((v, actionId, event) ->
+                edtSurnameOnEditorAction());
         binding.btnGreet.setOnClickListener(v -> btnGreetOnClick());
 
         binding.swtPremium.setOnClickListener(v -> isPremium());

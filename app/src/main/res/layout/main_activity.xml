@@ -28,6 +28,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/marginLeft"
         android:layout_marginRight="@dimen/marginRight"
+        android:maxLength="20"
         android:inputType="textCapSentences"
         android:imeOptions="actionNext"
         android:nextFocusDown="@id/edtSurname">
@@ -56,6 +57,7 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="@dimen/marginLeft"
         android:layout_marginRight="@dimen/marginRight"
+        android:maxLength="20"
         android:imeOptions="actionDone"
         android:inputType="textCapSentences"/>
 
